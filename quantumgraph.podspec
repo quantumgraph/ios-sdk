@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/quantumgraph/ios-sdk.git", :tag => "v#{s.version}"}
   s.default_subspec = "quantumgraph"  
   
-  s.subspec 'quantumgraph' do |ss|
-    ss.source_files = "quantumgraph/**/*.h"
-    ss.vendored_library = "quantumgraph/**/*.a"
+  s.subspec 'ios-sdk' do |ss|
+    ss.source_files = "ios-sdk/**/*.h"
+    ss.vendored_library = "ios-sdk/**/*.a"
   end
 
   #s.source_files = "QGSdk.h"
