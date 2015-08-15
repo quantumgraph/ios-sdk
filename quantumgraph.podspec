@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.default_subspec = "ios-sdk"  
   
   s.subspec 'ios-sdk' do |ss|
-    ss.source_files = "ios-sdk/**/*.h"
-    ss.vendored_library = "ios-sdk/**/*.a"
+    ss.source_files = "ios-sdk/QGSdk.h"
+    ss.vendored_library = "ios-sdk/*.a"
   end
 
   #s.source_files = "QGSdk.h"
