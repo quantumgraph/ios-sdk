@@ -9,15 +9,15 @@ Pod::Spec.new do |s|
   s.author             = { "quantumgraph" => "vivek@quantumgraph.com" }
   s.platform     = :ios, '6.0'
   s.source       = { :git => "https://github.com/quantumgraph/ios-sdk.git", :tag => "v#{s.version}"}
-  s.default_subspec = "quantumgraph"  
+  s.default_subspec = "ios-sdk"  
   
-  #s.subspec 'quantumgraph' do |ss|
-  #  ss.source_files = "quantumgraph/**/QGSdk.h"
-  #  ss.vendored_library = "quantumgraph/**/libQGSdk.a"
-  #end
+  s.subspec 'ios-sdk' do |ss|
+    ss.source_files = "ios-sdk/QGSdk.h"
+    ss.vendored_library = "ios-sdk/libQGSdk.a"
+  end
 
-  s.source_files = "QGSdk.h"
-  s.vendored_library = "libQGSdk.a"
+  #s.source_files = "QGSdk.h"
+  #s.vendored_library = "libQGSdk.a"
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
