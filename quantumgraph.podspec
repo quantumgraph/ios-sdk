@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author             = { "quantumgraph" => "vivek@quantumgraph.com" }
   s.platform     = :ios, '6.0'
   s.source       = { :git => "https://github.com/quantumgraph/ios-sdk.git", :tag => "v#{s.version}"}
-  s.default_subspec = "quantumgraph"  
+  s.default_subspec = "ios-sdk"  
   
   s.subspec 'ios-sdk' do |ss|
     ss.source_files = "ios-sdk/**/*.h"
