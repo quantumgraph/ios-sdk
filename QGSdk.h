@@ -2,8 +2,8 @@
 //  QGSdk.h
 //  QGSdk
 //
-//  Created by IKSHWAKU on 24/06/15.
-//  Copyright (c) 2015 IKSHWAKU. All rights reserved.
+//  Created by QuantumGraph
+//  Copyright (c) 2015 QuantumGraph. All rights reserved.
 
 #import <Foundation/Foundation.h>
 
@@ -26,10 +26,7 @@
 - (void)setDayOfBirth:(NSNumber *)day;
 - (void)setMonthOfBirth:(NSNumber *)month;
 - (void)setYearOfBirth:(NSNumber *)year;
-//- (void)setCustomUser:(NSString *)key Parameter:(id)value;
-//- (void)logEvent:(NSString *)name Info:(NSDictionary *)info;
 - (void)setCustomKey:(NSString *)key withValue:(id)value;
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters;
 
-- (void)storeNotification:(NSDictionary *) info;
 @end
