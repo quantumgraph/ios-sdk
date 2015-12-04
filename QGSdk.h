@@ -27,6 +27,8 @@
 - (void)setMonthOfBirth:(NSNumber *)month;
 - (void)setYearOfBirth:(NSNumber *)year;
 - (void)setCustomKey:(NSString *)key withValue:(id)value;
+- (void)logEvent:(NSString *)name;
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters;
-
+- (void)logEvent:(NSString *)name withValueToSum:(NSNumber *) valueToSum;
+- (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum;
 @end
