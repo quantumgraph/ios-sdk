@@ -17,6 +17,7 @@
 - (void)setToken:(NSData *)tokenData;
 - (void)onStop;
 - (void)onStart:(NSString *)appId;
+- (void)onStart:(NSString *)appId setDevProfile: (Boolean) devProfile;
 - (void)setUserId:(NSString *)userId;
 - (void)setName:(NSString *)name;
 - (void)setFirstName:(NSString *)name;
@@ -31,4 +32,6 @@
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters;
 - (void)logEvent:(NSString *)name withValueToSum:(NSNumber *) valueToSum;
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum;
+
+//- (void)storeNotification:(NSDictionary *) info;
 @end
