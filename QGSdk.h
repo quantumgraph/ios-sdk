@@ -9,7 +9,6 @@
 
 @interface QGSdk : NSObject {
     NSString *_appId;
-    NSString *_token;
 }
 
 @property NSString *appId;
@@ -32,6 +31,7 @@
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters;
 - (void)logEvent:(NSString *)name withValueToSum:(NSNumber *) valueToSum;
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum;
-
-//- (void)storeNotification:(NSDictionary *) info;
+- (void)setClickAttributionWindow:(NSInteger)seconds;
+- (void)didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
 @end
