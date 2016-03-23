@@ -7,16 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QGSdk : NSObject {
-    NSString *_appId;
-}
+@interface QGSdk : NSObject
 
-@property NSString *appId;
 + (QGSdk *) getSharedInstance;
 - (void)setToken:(NSData *)tokenData;
 - (void)onStop;
 - (void)onStart:(NSString *)appId;
-- (void)onStart:(NSString *)appId setDevProfile: (Boolean) devProfile;
+- (void)onStart:(NSString *)appId setDevProfile:(BOOL)devProfile;
 - (void)setUserId:(NSString *)userId;
 - (void)setName:(NSString *)name;
 - (void)setFirstName:(NSString *)name;
@@ -34,4 +31,5 @@
 - (void)setClickAttributionWindow:(NSInteger)seconds;
 - (void)didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 - (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
+
 @end
