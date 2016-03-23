@@ -3,7 +3,8 @@ Pod::Spec.new do |s|
   s.version      = "1.9.0"
   s.summary      = "iOSSdk helps you to analyse user events in your app"
 
-  s.homepage     = "http://docs.qgraph.io"
+  s.homepage     = "https://qgraph.io"
+  s.documentation_url = "http://docs.qgraph.io"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "quantumgraph" => "vivek@quantumgraph.com" }
