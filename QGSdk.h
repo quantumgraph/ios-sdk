@@ -43,6 +43,16 @@
 - (void)onStart:(NSString *)appId setDevProfile:(BOOL)devProfile;
 
 /*!
+ * Same as 'onStart:setDevProfile' with App Group options
+ * Use this onStart method if you wish to add widget extension of QGraph
+ * This method sets your app id and App Group (required for widget)
+ * App Group will help to share data between app target and widget target
+ * App Group is 'Required' to log events from widget
+ * Pass appGroup as 'nil' if not using widget
+ */
+- (void)onStart:(NSString *)appId withAppGroup:(NSString *)appGroup setDevProfile:(BOOL)devProfile;
+
+/*!
  * set the unique user id for your users
  * you can identify your user with user_id while creating segment on app.qgraph.io
  */
