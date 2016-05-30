@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "2.1.0"
+  s.version      = "2.2.0"
   s.summary      = "iOSSdk helps you to analyse user events in your app"
 
   s.homepage     = "http://qgraph.io"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.subspec 'ios-sdk' do |ss|
     ss.source_files = "QGSdk.h"
     ss.vendored_library = "libQGSdk.a"
-    ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation' 
+    ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation', 'ImageIO', 'MobileCoreServices' 
   end
 
   #s.source_files = "QGSdk.h"
