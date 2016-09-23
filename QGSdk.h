@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 
 @interface QGSdk : NSObject
 
@@ -39,8 +40,8 @@
  Add this method to you AppDelegate applicaiton:didFinishLaunchingWithOptions:
  You can find it your account on app.qgraph.io in setup.
  
- @param appId, your QGraph account appId
- @param devProfile, True/Yes for Development and False/No for Production
+ @param appId           your QGraph account appId
+ @param devProfile      True/Yes for Development and False/No for Production
  */
 - (void)onStart:(NSString *)appId setDevProfile:(BOOL)devProfile;
 
@@ -54,9 +55,9 @@
  App Group will help to share data between app target and widget target.
  App Group is 'Required' to log events from widget.
  
- @param appId, your QGraph account appId
- @param appGroup, APP-GROUP used for the widget and app target
- @param devProfile, True/Yes for Development and False/No for Production
+ @param appId           your QGraph account appId
+ @param appGroup        APP-GROUP used for the widget and app target
+ @param devProfile      True/Yes for Development and False/No for Production
  
  @note Pass appGroup as 'nil' if not using widget
  */
@@ -118,7 +119,7 @@
  Use this method to set any custom key for the user.
  Suppose you want to set rating of the user.
  
- @code setCustomKey:@"rating" withValue:3.5
+ @code setCustomKey:@"rating" withValue:3.5 @endcode
  */
 - (void)setCustomKey:(NSString *)key withValue:(id)value;
 
@@ -132,7 +133,7 @@
  
  eg: logEvent:@"product_viewed"
  
- @param name, name of the event
+ @param name            name of the event
  */
 - (void)logEvent:(NSString *)name;
 
@@ -148,8 +149,8 @@
  
  @note use valid data types in dictionary
  
- @param name, name of the event
- @param parameters, dictionary of all the parameter for the event
+ @param name            name of the event
+ @param parameters      dictionary of all the parameter for the event
  */
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters;
 
@@ -162,8 +163,8 @@
  
  @note Use value in the form of NSNumber
  
- @param name, name of the event
- @param valueToSum, monetary value (NSNumber) associated to the event
+ @param name            name of the event
+ @param valueToSum      monetary value (NSNumber) associated to the event
  */
 - (void)logEvent:(NSString *)name withValueToSum:(NSNumber *)valueToSum;
 
@@ -174,9 +175,9 @@
  @discussion
  Combination of logEvent:withParameter and logEvent:valueToSum
  
- @param name, name of the event
- @param parameters, dictionary of all the parameter for the event
- @param valueToSum, monetary value (NSNumber) associated to the event
+ @param name            name of the event
+ @param parameters      dictionary of all the parameter for the event
+ @param valueToSum      monetary value (NSNumber) associated to the event
  */
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum;
 
@@ -193,7 +194,7 @@
  
  @note Pass seconds as '0' to disable click attribution
  
- @param seconds, attribution window time in seconds
+ @param seconds         attribution window time in seconds
  */
 - (void)setClickAttributionWindow:(NSInteger)seconds;
 
@@ -210,7 +211,7 @@
  
  @note Pass seconds as '0' to disable view through attribution
  
- @param seconds, attribution window time in seconds
+ @param seconds         attribution window time in seconds
  */
 - (void)setAttributionWindow:(NSInteger)seconds;
 
@@ -260,6 +261,73 @@
  This method also let the sdk track app_launched event due to click on the notification sent by QGraph
  */
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo;
+
+/*!
+ @abstract
+ Returns Action Category for Custom Carousel Push
+ 
+ @discussion
+ Push Notification Action Category for Custom Carousel Push sent by QGraph for iOS 10.
+ 
+ To Register your action category, create other categories, if any.
+ Create NSSet with all the action categories and set it to the UNNotificationCenter
+ 
+ Pass button titles as nil to use the default title.
+ 
+ @note
+ Please add @code #import <UserNotifications/UserNotifications.h> @endcode in your AppDelegate
+ or the class you would like to add it.
+ Import <b>UserNotifications.framework</b> in your app target.
+ Also add <b>UNNotificationCenterDelegate</b> to your Class
+ 
+ @param next            Next Button Title, default '▶▶'
+ @param openApp         Open App Button Title, default 'GO TO APP'
+ 
+ @code
+ UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+ UNNotificationCategory *qgCategory = [[QGSdk getSharedInstance] getQGSliderPushActionCategoryWithNextButtonTitle:@"▶▶" withOpenAppButtonTitle:@"GO TO APP"];
+ NSSet *categories = [NSSet setWithObjects:qgCategory,..., nil];
+ [center setNotificationCategories:categories];
+ @endcode
+*/
+- (UNNotificationCategory *)getQGSliderPushActionCategoryWithNextButtonTitle:(NSString *)next withOpenAppButtonTitle:(NSString *)openApp;
+
+/*!
+ @abstract
+ Captures the push notification delivered in foreground.
+ 
+ @discussion
+ Add to your AppDelegate or class implementing your UNNotificationCenterDelegate methods.
+ @code
+ [[QGSdk getSharedInstance] userNotificationCenter:center willPresentNotification:notification];
+ @endcode
+ 
+ The delegate method can be used to show the notification alert in the foreground State.
+ In your completion handler, pass your UNNotificationPresentationOptions.
+ 
+ For eg:
+ @code
+ UNNotificationPresentationOptions option = UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert;
+ completionHandler(option);
+ @endcode
+ 
+ */
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification;
+
+/*!
+ @abstract
+ Captures the push notification clicked event.
+ 
+ @discussion
+ Add to your AppDelegate or class implementing your UNNotificationCenterDelegate methods.
+ 
+ The method will be called on the delegate when the user responded to the notification by opening the application or choosing a UNNotificationAction.
+ 
+ @code
+ [[QGSdk getSharedInstance] userNotificationCenter:center didReceiveNotificationResponse:response];
+ @endcode
+ */
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response;
 
 /*!
  @abstract

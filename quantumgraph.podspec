@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "2.3.2"
+  s.version      = "3.0.0"
   s.summary      = "iOS Sdk helps you to analyse user events in your app"
 
   s.homepage     = "http://qgraph.io"
