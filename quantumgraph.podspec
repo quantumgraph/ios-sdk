@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "3.0.0"
+  s.version      = "3.0.1"
   s.summary      = "iOS Sdk helps you to analyse user events in your app"
 
   s.homepage     = "http://qgraph.io"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "quantumgraph" => "vivek@quantumgraph.com" }
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/quantumgraph/ios-sdk.git", :tag => "v#{s.version}"}
   s.default_subspec = "ios-sdk"  
   
