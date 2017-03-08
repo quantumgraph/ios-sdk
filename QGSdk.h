@@ -170,6 +170,21 @@
 
 /*!
  @abstract
+ Track any event in your app with monetary value associated to it along with its currency
+ 
+ @discussion
+ eg: for event: product_viewed, price of the product is 50 INR or 1 USD
+ 
+ @note Use value in the form of NSNumber and 3 character currency code
+ 
+ @param name            name of the event
+ @param valueToSum      monetary value (NSNumber) associated to the event
+ @param vtsCurr         currency code of the value to sum
+ */
+- (void)logEvent:(NSString *)name withValueToSum:(NSNumber *)valueToSum withValueToSumCurrency:(NSString *)vtsCurr;
+
+/*!
+ @abstract
  Track any event in your app with custom parameters and monetary value associated to it
  
  @discussion
@@ -180,6 +195,20 @@
  @param valueToSum      monetary value (NSNumber) associated to the event
  */
 - (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum;
+
+/*!
+ @abstract
+ Track any event in your app with custom parameters and monetary value associated to it along with its currency
+ 
+ @discussion
+ Combination of logEvent:withParameter and logEvent:withValueToSum:withValueToSumCurrency
+ 
+ @param name            name of the event
+ @param parameters      dictionary of all the parameter for the event
+ @param valueToSum      monetary value (NSNumber) associated to the event
+ @param vtsCurr         currency code of the value to sum
+ */
+- (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum withValueToSumCurrency:(NSString *)vtsCurr;
 
 /*!
  @abstract
