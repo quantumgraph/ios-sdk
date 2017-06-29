@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "3.2.1"
   s.summary      = "iOS Sdk helps you to analyse user events in your app"
 
-  s.homepage     = "http://qgraph.io"
+  s.homepage     = "https://qgraph.io"
   s.documentation_url = "http://docs.qgraph.io"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
