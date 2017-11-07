@@ -377,6 +377,6 @@
  When calling flush manually, it is sometimes important to verify
  that the flush has finished before further action is taken.
  */
-- (void)flushWithCompletion:(void (^)())handler;
+- (void)flushWithCompletion:(void (^)(void))handler;
 
 @end
