@@ -4,6 +4,7 @@
 //
 //  Created by QuantumGraph
 //  Copyright (c) 2015 QuantumGraph. All rights reserved.
+//  SDK VERSION ---> 4.0.0
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -51,20 +52,36 @@
  
  @discussion
  Same as 'onStart:setDevProfile' with App Group options.
- Use this onStart method if you wish to add Widget extension of QGraph.
- App Group will help to share data between app target and widget target.
- App Group is 'Required' to log events from widget.
+ Use this onStart method if you wish to add content & service extension of QGraph.
+ App Group will help to share data between app target and extensions.
+ App Group is 'Required' to log events from extension and also to track
+ certain events from the rich push notification.
  
  @param appId           your QGraph account appId
- @param appGroup        APP-GROUP used for the widget and app target
+ @param appGroup        APP-GROUP used for the service & content extension and app target
  @param devProfile      True/Yes for Development and False/No for Production
  
- @note Pass appGroup as 'nil' if not using widget
+ @note Pass appGroup as 'nil' if not using rich push (Carousel/Slider Push)
+ @note However this appGroup also helps track ctr for the push notification using service extension.
  */
 - (void)onStart:(NSString *)appId withAppGroup:(NSString *)appGroup setDevProfile:(BOOL)devProfile;
 
 /*! This method is not used currently */
 - (void)onStop;
+
+/*!
+ @abstract
+ Returns boolean to show push prompt
+ 
+ @discussion
+ You can use this value to determine when to show push prompt.
+ Since iOS 12, you can send silent push without push permission until user turn off the notification.
+ After sending some silent push, you can decide if you want to show push prompt based on user activity on your app.
+ 
+ @note If not set, default value is true
+ 
+ */
+- (BOOL)getShowPushPrompt;
 
 /*!
  @abstract
@@ -259,20 +276,6 @@
 
 /*!
  @abstract
- Disables user conversion tracking between web apps and iOS apps
- 
- @discussion
- Used for User Conversion Tracking between web apps and ios apps using safari cookies
- If you want to disable user tracking and reading cookies in safari, use this method
- 
- By Default, it is enabled. Call it in your <b>AppDelegate</b>, only to 'DISABLE'
- 
- */
-- (void)disableUserTrackingForSafari;
-
-
-/*!
- @abstract
  Tracks application launch finish
  
  @discussion
@@ -290,36 +293,6 @@
  This method also let the sdk track app_launched event due to click on the notification sent by QGraph
  */
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo;
-
-/*!
- @abstract
- Returns Action Category for Custom Carousel Push
- 
- @discussion
- Push Notification Action Category for Custom Carousel Push sent by QGraph for iOS 10.
- 
- To Register your action category, create other categories, if any.
- Create NSSet with all the action categories and set it to the UNNotificationCenter
- 
- Pass button titles as nil to use the default title.
- 
- @note
- Please add @code #import <UserNotifications/UserNotifications.h> @endcode in your AppDelegate
- or the class you would like to add it.
- Import <b>UserNotifications.framework</b> in your app target.
- Also add <b>UNNotificationCenterDelegate</b> to your Class
- 
- @param next            Next Button Title, default '▶▶'
- @param openApp         Open App Button Title, default 'GO TO APP'
- 
- @code
- UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
- UNNotificationCategory *qgCategory = [[QGSdk getSharedInstance] getQGSliderPushActionCategoryWithNextButtonTitle:@"▶▶" withOpenAppButtonTitle:@"GO TO APP"];
- NSSet *categories = [NSSet setWithObjects:qgCategory,..., nil];
- [center setNotificationCategories:categories];
- @endcode
-*/
-- (UNNotificationCategory *)getQGSliderPushActionCategoryWithNextButtonTitle:(NSString *)next withOpenAppButtonTitle:(NSString *)openApp;
 
 /*!
  @abstract
@@ -341,7 +314,7 @@
  @endcode
  
  */
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification;
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0));
 
 /*!
  @abstract
@@ -356,7 +329,7 @@
  [[QGSdk getSharedInstance] userNotificationCenter:center didReceiveNotificationResponse:response];
  @endcode
  */
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response;
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response API_AVAILABLE(ios(10.0));
 
 /*!
  @abstract

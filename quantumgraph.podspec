@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "3.3.4"
+  s.version      = "4.0.0"
   s.summary      = "iOS Sdk helps you to analyse user events in your app"
 
-  s.homepage     = "https://qgraph.io"
-  s.documentation_url = "http://docs.qgraph.io"
+  s.homepage     = "https://www.appier.com/en/index.html"
+  s.documentation_url = "https://aiqua-developer-documentation.appier.com/"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "quantumgraph" => "vivek@quantumgraph.com" }
+  s.author             = { "appier" => "shiv.raj@appier.com" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/quantumgraph/ios-sdk.git", :tag => "v#{s.version}"}
   s.default_subspec = "ios-sdk"  
