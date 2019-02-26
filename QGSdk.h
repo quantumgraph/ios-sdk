@@ -2,9 +2,10 @@
 //  QGSdk.h
 //  QGSdk
 //
-//  Created by QuantumGraph
-//  Copyright (c) 2015 QuantumGraph. All rights reserved.
-//  SDK VERSION ---> 4.0.1
+//  Created by Shiv
+//  Copyright (c) 2019 APPIER INC. All rights reserved.
+//  SDK VERSION ---> 4.1.0
+//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
