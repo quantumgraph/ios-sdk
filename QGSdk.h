@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.1.0
+//  SDK VERSION ---> 4.2.0
 //
 
 #import <Foundation/Foundation.h>
@@ -352,5 +352,15 @@
  that the flush has finished before further action is taken.
  */
 - (void)flushWithCompletion:(void (^)(void))handler;
+
+/*!
+ @abstract
+ Returns recommendation data for the user based on User to Product AI Model
+ 
+ @discussion
+ This is a asynchronous function which returns array of recommended objects
+ based on User To Product AI Model. Parse the response object and use it as required
+ */
+- (void)getRecommendationForModelUserToProductWithCompletion:(void (^)(NSArray *response))completion;
 
 @end
