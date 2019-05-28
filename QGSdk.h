@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.2.0
+//  SDK VERSION ---> 4.3.0
 //
 
 #import <Foundation/Foundation.h>
@@ -66,6 +66,16 @@
  @note However this appGroup also helps track ctr for the push notification using service extension.
  */
 - (void)onStart:(NSString *)appId withAppGroup:(NSString *)appGroup setDevProfile:(BOOL)devProfile;
+
+/*!
+ @abstract
+ Set the Associated Domains for Universal
+
+ @param domains         The Associated Domains
+
+ @note For example: [[QGSdk getSharedInstance] setUniversalLinkDomains:@[@"first.domain.com", @"second.domain.com]];
+ */
+- (void)setUniversalLinkDomains:(nonnull NSArray <NSString *> *)domains;
 
 /*! This method is not used currently */
 - (void)onStop;
