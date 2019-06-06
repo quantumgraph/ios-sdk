@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'ios-sdk' do |ss|
     ss.library = 'z'
-    ss.source_files = "QGSdk.h"
+    ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h"
     ss.vendored_library = "libQGSdk.a"
     ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation', 'ImageIO', 'MobileCoreServices' 
   end
