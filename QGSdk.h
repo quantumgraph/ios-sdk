@@ -4,13 +4,13 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.3.0
+//  SDK VERSION ---> 4.4.0
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface QGSdk : NSObject
 
 /*!
@@ -20,7 +20,7 @@
  @discussion
  Setting a flush interval of 0 will turn off the flush timer.
  
- @note Default to 1 sec in DEBUG and 15 secs in Release
+ @note Default to 1 sec in Dev and 15 secs in Release
  */
 @property (atomic) NSUInteger flushInterval;
 
@@ -65,7 +65,7 @@
  @note Pass appGroup as 'nil' if not using rich push (Carousel/Slider Push)
  @note However this appGroup also helps track ctr for the push notification using service extension.
  */
-- (void)onStart:(NSString *)appId withAppGroup:(NSString *)appGroup setDevProfile:(BOOL)devProfile;
+- (void)onStart:(NSString *)appId withAppGroup:(nullable NSString *)appGroup setDevProfile:(BOOL)devProfile;
 
 /*!
  @abstract
@@ -75,7 +75,7 @@
 
  @note For example: [[QGSdk getSharedInstance] setUniversalLinkDomains:@[@"first.domain.com", @"second.domain.com]];
  */
-- (void)setUniversalLinkDomains:(nonnull NSArray <NSString *> *)domains;
+- (void)setUniversalLinkDomains:(NSArray <NSString *> *)domains;
 
 /*! This method is not used currently */
 - (void)onStop;
@@ -180,7 +180,7 @@
  @param name            name of the event
  @param parameters      dictionary of all the parameter for the event
  */
-- (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters;
+- (void)logEvent:(NSString *)name withParameters:(nullable NSDictionary *)parameters;
 
 /*!
  @abstract
@@ -194,7 +194,7 @@
  @param name            name of the event
  @param valueToSum      monetary value (NSNumber) associated to the event
  */
-- (void)logEvent:(NSString *)name withValueToSum:(NSNumber *)valueToSum;
+- (void)logEvent:(NSString *)name withValueToSum:(nullable NSNumber *)valueToSum;
 
 /*!
  @abstract
@@ -209,7 +209,7 @@
  @param valueToSum      monetary value (NSNumber) associated to the event
  @param vtsCurr         currency code of the value to sum
  */
-- (void)logEvent:(NSString *)name withValueToSum:(NSNumber *)valueToSum withValueToSumCurrency:(NSString *)vtsCurr;
+- (void)logEvent:(NSString *)name withValueToSum:(nullable NSNumber *)valueToSum withValueToSumCurrency:(nullable NSString *)vtsCurr;
 
 /*!
  @abstract
@@ -222,7 +222,7 @@
  @param parameters      dictionary of all the parameter for the event
  @param valueToSum      monetary value (NSNumber) associated to the event
  */
-- (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum;
+- (void)logEvent:(NSString *)name withParameters:(nullable NSDictionary *)parameters withValueToSum:(nullable NSNumber *) valueToSum;
 
 /*!
  @abstract
@@ -236,7 +236,7 @@
  @param valueToSum      monetary value (NSNumber) associated to the event
  @param vtsCurr         currency code of the value to sum
  */
-- (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(NSNumber *) valueToSum withValueToSumCurrency:(NSString *)vtsCurr;
+- (void)logEvent:(NSString *)name withParameters:(nullable NSDictionary *)parameters withValueToSum:(nullable NSNumber *) valueToSum withValueToSumCurrency:(nullable NSString *)vtsCurr;
 
 /*!
  @abstract
@@ -374,3 +374,4 @@
 - (void)getRecommendationForModelUserToProductWithCompletion:(void (^)(NSArray *response))completion;
 
 @end
+NS_ASSUME_NONNULL_END
