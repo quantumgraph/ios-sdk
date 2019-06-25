@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "4.4.0"
+  s.version      = "4.4.1"
   s.summary      = "iOS Sdk helps you to track user events in your app and display notifications"
 
   s.homepage     = "https://www.appier.com/en/index.html"
-  s.documentation_url = "https://aiqua-developer-documentation.appier.com/"
+  s.documentation_url = "https://docs.aiqua.appier.com/docs"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "appier" => "shiv.raj@appier.com" }

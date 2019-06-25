@@ -7,9 +7,16 @@
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AIQP : NSObject
+
+/*!
+ @discussion
+ Restrict external init calls and allow to use singleton.
+ */
+- (instancetype)init __attribute__((unavailable("Please use `+ (AIQP *)getContextForViewController:(UIViewController *)controller;` instead")));
 
 /*!
  @abstract
@@ -107,6 +114,9 @@ NS_ASSUME_NONNULL_BEGIN
                             @"http://your.personalized.domain/personalized.jpg"
  */
 - (NSString *)getImageUrlForKey:(NSString *)key withDefaultValue:(NSString *)value;
+
+
++ (void)setDisabledStatus:(BOOL)status;
 
 @end
 NS_ASSUME_NONNULL_END

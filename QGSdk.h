@@ -4,12 +4,13 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.4.0
+//  SDK VERSION ---> 4.4.1
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
+
 NS_ASSUME_NONNULL_BEGIN
 @interface QGSdk : NSObject
 
@@ -23,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
  @note Default to 1 sec in Dev and 15 secs in Release
  */
 @property (atomic) NSUInteger flushInterval;
+
+/*!
+ @discussion
+ Restrict external init calls and allow to use singleton.
+ */
+-(instancetype) init __attribute__((unavailable("Please use `+ (QGSdk *)getSharedInstance;` instead")));
 
 /*!
  @discussion
