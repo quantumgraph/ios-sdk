@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)addScriptMessageHandler:(NSString *)name;
 
-@property (nonatomic, assign) id <QGWKScriptMessageHandler> delegate;
+@property (nonatomic, weak) id <QGWKScriptMessageHandler> delegate;
 
 @end
 

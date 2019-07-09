@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.4.1
+//  SDK VERSION ---> 4.4.2
 //
 
 #import <Foundation/Foundation.h>
@@ -73,6 +73,58 @@ NS_ASSUME_NONNULL_BEGIN
  @note However this appGroup also helps track ctr for the push notification using service extension.
  */
 - (void)onStart:(NSString *)appId withAppGroup:(nullable NSString *)appGroup setDevProfile:(BOOL)devProfile;
+
+/*!
+ @method
+ 
+ @abstract
+ Register UNNotificationCategory for Carousel Action Buttons.
+ 
+ @discussion
+ Registers the UNNotificationCategory for custom notification(Carousel) with the action buttons.
+ If there are no action buttons, this method can be used to directly register the carousel actions.
+ If there are other action category to be registered, get the QGCAROUSEL category and
+ register along with other categories. Use `getQGSliderPushActionCategoryWithNextButtonTitle` method.
+ By default, sdk will register this with deault buttons.
+ 
+ iOS 11 and below has Next button (to scroll item) and open app button (for deeplink).
+ iOS 12 and above, user interaction is enabled, so only open app button is shown.
+ 
+ @param next            optional next button title, default to '▶▶' (iOS 11 and below)
+ @param openApp         optional open app button title, default to 'Open App'
+ 
+ @code
+ [QGSdk setCarouselNotificationCategoryWithNextButtonTitle:nil withOpenAppButtonTitle:nil];
+ 
+ [QGSdk setCarouselNotificationCategoryWithNextButtonTitle:@"Next" withOpenAppButtonTitle:@"Check Out"];
+ @endcode
+ 
+ */
++ (void)setCarouselNotificationCategoryWithNextButtonTitle:(nullable NSString *)next withOpenAppButtonTitle:(nullable NSString *)openApp API_AVAILABLE(ios(10.0));
+
+/*!
+ @method
+ 
+ @abstract
+ Register UNNotificationCategory for Carousel Action Buttons.
+ 
+ @discussion
+ Registers the UNNotificationCategory for custom notification(Carousel) with the action buttons. If you have other notification action category, add along with this category. By default, sdk will register this with deault buttons.
+ 
+ iOS 11 and below has Next button (to scroll item) and open app button (for deeplink).
+ iOS 12 and above, user interaction is enabled, so only open app button is shown.
+ 
+ @param next            optional next button title, default to '▶▶' (iOS 11 and below)
+ @param openApp         optional open app button title, default to 'Open App'
+ 
+ @code
+ [QGSdk getQGSliderPushActionCategoryWithNextButtonTitle:nil withOpenAppButtonTitle:nil];
+ 
+ [QGSdk getQGSliderPushActionCategoryWithNextButtonTitle:@"Next" withOpenAppButtonTitle:@"Check Out"];
+ @endcode
+ 
+ */
++ (UNNotificationCategory *)getQGSliderPushActionCategoryWithNextButtonTitle:(nullable NSString *)next withOpenAppButtonTitle:(nullable NSString *)openApp API_AVAILABLE(ios(10.0));
 
 /*!
  @abstract
