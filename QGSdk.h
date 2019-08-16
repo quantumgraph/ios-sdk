@@ -4,12 +4,13 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.4.3
+//  SDK VERSION ---> 4.5.0
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import "QGInbox.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @interface QGSdk : NSObject
@@ -432,5 +433,56 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)getRecommendationForModelUserToProductWithCompletion:(void (^)(NSArray *response))completion;
 
+/*!
+ @abstract
+ Fetch the latest remote inboxMessages
+ 
+ @discussion
+ This is an asynchronous function to get the latest messages from servers. In the completionHandler,
+ we could call getInboxesWithStatusRead:(BOOL)read statusUnread:(BOOL)unread statusDeleted:(BOOL)deleted to
+ get the most recent messages if success is true. If success is false, we could still get the existingly local saved messages
+ 
+ @code
+ [[QGSdk getSharedInstance] fetchInboxMessages:^(BOOL success, NSError * _Nullable error) {
+    if (success) {
+        NSArray <QGInbox *> *inboxList = [[QGSdk getSharedInstance] getInboxesWithStatusRead:YES statusUnread:YES statusDeleted:YES];
+    }
+ }];
+ @endcode
+ */
+- (void)fetchInboxMessages:(void (^)(BOOL success, NSError * _Nullable error))completionHandler;
+
+/*!
+ @abstract
+ Returns inboxMessages from local storage.
+ 
+ @discussion
+ This is a synchronous function which immediately returns array of inbox objects
+ 
+ @code
+ Get messages with status Deleted, ex:
+ NSArray <QGInbox *> *inboxList = [[QGSdk getSharedInstance] getInboxesWithStatusRead:NO read statusUnread:NO statusDeleted:YES];
+ 
+ Get messages with status Read or Deleted, ex:
+ NSArray <QGInbox *> *inboxList = [[QGSdk getSharedInstance] getInboxesWithStatusRead:YES statusUnread:NO statusDeleted:YES];
+ @endcode
+ */
+- (NSArray<QGInbox *> *)getInboxesWithStatusRead:(BOOL)read statusUnread:(BOOL)unread statusDeleted:(BOOL)deleted;
+
+/*!
+ @abstract
+ Update the limit of inboxMessage
+ 
+ @discussion
+ This will update the number of limit for storage of inbox message. Then check if current count of inbox
+ message exceeds this new limit. If exceeds, older records in the existing inbox messages will be removed.
+ 
+ @param limit             the limit to change (QGInboxLimitSmall, QGInboxLimitMedium, QGInboxLimitHigh, QGInboxLimitExtraHigh)
+ 
+ @code
+ Update the inbox limit to QGInboxLimitHigh, ex: [[QGSdk getSharedInstance] updateInboxRecordLimit:QGInboxLimitHigh];
+ @endcode
+ */
+- (void)updateInboxRecordLimit:(QGInboxLimit) limit;
 @end
 NS_ASSUME_NONNULL_END

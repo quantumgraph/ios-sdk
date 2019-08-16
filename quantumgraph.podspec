@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "4.4.3"
+  s.version      = "4.5.0"
   s.summary      = "iOS Sdk helps you to track user events in your app and display notifications"
 
   s.homepage     = "https://www.appier.com/en/index.html"
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'ios-sdk' do |ss|
     ss.library = 'z'
-    ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h"
+    ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h", "QGInbox.h"
     ss.vendored_library = "libQGSdk.a"
     ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation', 'ImageIO', 'MobileCoreServices' 
   end
