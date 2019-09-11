@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.5.0
+//  SDK VERSION ---> 4.6.0
 //
 
 #import <Foundation/Foundation.h>
@@ -484,5 +484,6 @@ NS_ASSUME_NONNULL_BEGIN
  @endcode
  */
 - (void)updateInboxRecordLimit:(QGInboxLimit) limit;
+
 @end
 NS_ASSUME_NONNULL_END
