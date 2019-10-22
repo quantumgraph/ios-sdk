@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 4.6.1
+//  SDK VERSION ---> 5.0.0
 //
 
 #import <Foundation/Foundation.h>
@@ -297,6 +297,22 @@ NS_ASSUME_NONNULL_BEGIN
  @param vtsCurr         currency code of the value to sum
  */
 - (void)logEvent:(NSString *)name withParameters:(nullable NSDictionary *)parameters withValueToSum:(nullable NSNumber *) valueToSum withValueToSumCurrency:(nullable NSString *)vtsCurr;
+
+/*!
+ @abstract
+ Convert the parameters into several events for tracking.
+ 
+ @discussion
+ Combination of logEvent:withParameter and logEvent:withValueToSum:withValueToSumCurrency:withConvertedEvent:withAttributeEnable
+ 
+ @param name            name of the event
+ @param parameters      dictionary of all the parameter for the event
+ @param valueToSum      monetary value (NSNumber) associated to the event
+ @param vtsCurr         currency code of the value to sum
+ @param convertedEventName    name of multi-parameters event
+ @param enabled         enabled / disabled sending attribution info
+ */
+- (void)logEvent:(NSString *)name withParameters:(NSDictionary *)parameters withValueToSum:(nullable NSNumber *)valueToSum withValueToSumCurrency:(nullable NSString *)vtsCurr withConvertedEvent:(nullable NSString *)convertedEventName withAttributionEnabled:(BOOL)enabled;
 
 /*!
  @abstract
