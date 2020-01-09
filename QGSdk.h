@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 5.1.0
+//  SDK VERSION ---> 5.2.0
 //
 
 #import <Foundation/Foundation.h>
@@ -441,13 +441,37 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract
- Returns recommendation data for the user based on User to Product AI Model
+ Returns recommendation data for the user based on User to Product AI Model without Category Filter
  
  @discussion
  This is a asynchronous function which returns array of recommended objects
- based on User To Product AI Model. Parse the response object and use it as required
+ based on User To Product AI Model without filtering any category from the product data feed.
+ Parse the response object and use it as required
  */
 - (void)getRecommendationForModelUserToProductWithCompletion:(void (^)(NSArray *response))completion;
+
+/*!
+ @abstract
+ Returns recommendation data for the user based on User to Product AI Model with Some Category Filter
+
+ @discussion
+ This is a asynchronous function which returns array of recommended objects
+ based on User To Product AI Model with filtering a specified product category with sub-category and sub-sub-category.
+ 
+ For Example: Filter with following categories
+ Cateory - Clothing
+ Sub-Category - Men
+ Sub-Sub-Category - Shirts
+ 
+ @code
+ [[QGSdk getSharedInstance] getRecommendationForModelUserToProductWithCategory:@"Clothing" withSubCategory:@"Men" withSubSubCategory:@"Shirts" withCompletion:^(NSArray * _Nonnull response) {
+    NSLog(@"Recommendation Response:%@", response);
+ }];
+ @endcode
+ 
+ Parse the response object and use it as required
+*/
+- (void)getRecommendationForModelUserToProductWithCategory:(NSString * _Nullable)category withSubCategory:(NSString * _Nullable)subCategory withSubSubCategory:(NSString * _Nullable)subSubCategory withCompletion:(void (^)(NSArray *response))completion;
 
 /*!
  @abstract
