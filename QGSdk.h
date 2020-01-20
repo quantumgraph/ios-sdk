@@ -4,7 +4,7 @@
 //
 //  Created by Shiv
 //  Copyright (c) 2019 APPIER INC. All rights reserved.
-//  SDK VERSION ---> 5.2.0
+//  SDK VERSION ---> 5.2.1
 //
 
 #import <Foundation/Foundation.h>
@@ -525,5 +525,75 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)updateInboxRecordLimit:(QGInboxLimit) limit;
 
+/*!
+@abstract
+Get locally saved push notification data, which is a list of notification payload
+
+@discussion
+Whenever we received push notification, we save the payload in the local storage
+ 
+@code
+NSArray *payloadList = [QGSdk getSharedInstance] fetchSavedPushNotifications];
+@endcode
+*/
+- (NSArray*)fetchSavedPushNotifications;
+
+/*!
+@abstract
+Remove all local-saved push notification data
+
+@discussion
+Clean all local-saved push notification data if we don't need it
+ 
+@code
+[QGSdk getSharedInstance] deleteSavedPushNotifications];
+@endcode
+*/
+- (void)deleteSavedPushNotifications;
+
+/*!
+@abstract
+Remove one specific local-saved push notification
+
+@discussion
+We just need to remove one specific local-saved push notification
+ 
+@code
+[QGSdk getSharedInstance] deleteNotificationAtIndex:index];
+@endcode
+*/
+- (void)deleteNotificationAtIndex:(NSUInteger)index;
+
+/*!
+@abstract
+Enable or Disable Remote Push Notification Storage
+
+@discussion
+This method can be used to enable or disable storage of Remote
+Push Notification which are sent only from AIQUA Server.
+
+By default, it is @b DISABLED.
+ 
+@note QGNotificationSdk (Version 5.2.1 and above) i.e. Rich push @b MUST be integrated
+ 
+@code
+[QGSdk getSharedInstance] enablePushNotificationStorage];
+@endcode
+*/
+- (void)enablePushNotificationStorage;
+
+/*!
+@abstract
+ Set the maxinum number of rows to save push notification
+
+@discussion
+ This is the maximum number (Default to 20) of latest notifications received from AIQUA server will be stored by the sdk.
+ If the limit you set is smaller than the existing limit, for example changing from 100 to 80, the older 20 notifications will be deleted.
+ 
+@code
+[QGSdk getSharedInstance] setPushNotificationStorageLimit:100];
+@endcode
+*/
+- (void)setPushNotificationStorageLimit:(long)limit;
 @end
 NS_ASSUME_NONNULL_END
