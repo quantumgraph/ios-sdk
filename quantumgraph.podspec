@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "appier" => "shiv.raj@appier.com" }
   s.platform     = :ios, '8.0'
-  s.source       = { :git => "https://github.com/quantumgraph/ios-sdk.git", :tag => "v#{s.version}"}
+  s.source       = { :git => "https://github.com/appier/aiqua-ios-sdk.git", :tag => "v#{s.version}"}
   s.default_subspec = "ios-sdk"  
   
   s.subspec 'ios-sdk' do |ss|
