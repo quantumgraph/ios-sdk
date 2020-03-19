@@ -1,6 +1,10 @@
+require 'json'
+
+package = JSON.parse(File.read(File.join(__dir__, 'version.json')))
+
 Pod::Spec.new do |s|
   s.name         = "quantumgraph"
-  s.version      = "5.2.1"
+  s.version      = package['version']
   s.summary      = "iOS Sdk helps you to track user events in your app and display notifications"
 
   s.homepage     = "https://www.appier.com/en/index.html"
@@ -14,7 +18,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'ios-sdk' do |ss|
     ss.library = 'z'
-    ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h", "QGInbox.h"
+    ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h", "QGInbox.h", "AIQP+ReactNative.h"
     ss.vendored_library = "libQGSdk.a"
     ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation', 'ImageIO', 'MobileCoreServices' 
   end
