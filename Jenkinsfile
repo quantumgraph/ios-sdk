@@ -10,7 +10,7 @@ pipeline {
       steps {
         checkout scm
         sh '''#!/bin/bash
-VERSION=`grep VERSION QGSdk.h | rev | cut -d ' ' -f1 | rev`
+VERSION=$(cat version.json | jq -r .version)
 GIT_TAG=v$VERSION
 git tag -a -m "tagging $GIT_TAG" $GIT_TAG
 git push -u origin $GIT_TAG
