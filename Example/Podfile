@@ -1,0 +1,6 @@
+use_frameworks!
+target 'quantumgraph_Tests' do
+  pod 'quantumgraph', :path => '../'
+  
+  
+end

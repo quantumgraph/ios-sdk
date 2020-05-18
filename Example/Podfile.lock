@@ -1,0 +1,16 @@
+PODS:
+  - quantumgraph (0.1.0)
+
+DEPENDENCIES:
+  - quantumgraph (from `../`)
+
+EXTERNAL SOURCES:
+  quantumgraph:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  quantumgraph: bade1a5efc66792e8b220eadb8f579068c59dcdd
+
+PODFILE CHECKSUM: fd18659a99e146b2b0c21ce46de4ea8ca644569a
+
+COCOAPODS: 1.9.1

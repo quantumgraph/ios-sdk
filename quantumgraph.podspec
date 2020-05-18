@@ -14,15 +14,17 @@ Pod::Spec.new do |s|
   s.author             = { "appier" => "shiv.raj@appier.com" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/appier/aiqua-ios-sdk.git", :tag => "v#{s.version}"}
-  s.default_subspec = "ios-sdk"  
-  
+  s.default_subspec = "ios-sdk"
+
   s.subspec 'ios-sdk' do |ss|
     ss.library = 'z'
-    ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h", "QGInbox.h", "AIQP+ReactNative.h"
-    ss.vendored_library = "libQGSdk.a"
-    ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation', 'ImageIO', 'MobileCoreServices' 
+    ss.source_files = 'quantumgraph/Classes/**/*'
+    #ss.source_files = "QGSdk.h", "AIQP.h", "QGWKWebView.h", "QGInbox.h", "AIQP+ReactNative.h"
+    #ss.vendored_library = "libQGSdk.a"
+    ss.vendored_libraries = 'quantumgraph/Classes/*.a'
+    ss.frameworks = 'AdSupport', 'CoreTelephony', 'SystemConfiguration', 'CoreLocation', 'ImageIO', 'MobileCoreServices'  
   end
 
   s.requires_arc = true
-
+  s.static_framework = true
 end
