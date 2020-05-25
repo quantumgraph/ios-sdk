@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051C3A9F247BE0DA00E48244 /* AIQP.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A98247BE0D900E48244 /* AIQP.h */; };
-		051C3AA0247BE0DA00E48244 /* QGInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A99247BE0D900E48244 /* QGInbox.h */; };
-		051C3AA3247BE0DA00E48244 /* QGWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A9C247BE0D900E48244 /* QGWKWebView.h */; };
-		051C3AA4247BE0DA00E48244 /* AIQP+ReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A9D247BE0DA00E48244 /* AIQP+ReactNative.h */; };
-		051C3AA5247BE0DA00E48244 /* QGSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A9E247BE0DA00E48244 /* QGSdk.h */; };
 		07B77D8B7651E42F44E48B0F6218ADBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		24C3B6E3FC91684E501B323D72095470 /* Appier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A83AC93AEE9ED2410104BFCEEC68D9B /* Appier-dummy.m */; };
+		24C3B6E3FC91684E501B323D72095470 /* Appier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 542D86605A181ED2D9A56BD90C9C4C6A /* Appier-dummy.m */; };
 		860944E6AC5F8BCDBC664206EC3CBE5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C34250B6247C0B59003DEDA6 /* AIQP+ReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = C34250B0247C0B59003DEDA6 /* AIQP+ReactNative.h */; };
+		C34250B7247C0B59003DEDA6 /* QGSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = C34250B1247C0B59003DEDA6 /* QGSdk.h */; };
+		C34250B9247C0B59003DEDA6 /* QGWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = C34250B3247C0B59003DEDA6 /* QGWKWebView.h */; };
+		C34250BA247C0B59003DEDA6 /* QGInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = C34250B4247C0B59003DEDA6 /* QGInbox.h */; };
+		C34250BB247C0B59003DEDA6 /* AIQP.h in Headers */ = {isa = PBXBuildFile; fileRef = C34250B5247C0B59003DEDA6 /* AIQP.h */; };
 		CB09A8EA59CB69612C1B3ABC8472FAA7 /* Pods-Appier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B895F7A74BEB107C8953944B107E33 /* Pods-Appier_Tests-dummy.m */; };
 		CBCD5629DF48E2D51C96B3797317B59E /* Pods-Appier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB654941D1CF3E197EA96C9896E274D6 /* Pods-Appier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D88233462FAB4DC59A7730C7ECF5B2E0 /* Appier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5F7475C6E65FAD6A54EB4A696BFF6C /* Appier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D88233462FAB4DC59A7730C7ECF5B2E0 /* Appier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DAB3F3A876B92BFE9CB8092D46D9D9 /* Appier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,34 +32,33 @@
 
 /* Begin PBXFileReference section */
 		0302244C77E2B0A4AEB306824A4FB6D7 /* Pods-Appier_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Appier_Tests-Info.plist"; sourceTree = "<group>"; };
-		051C3A98247BE0D900E48244 /* AIQP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIQP.h; path = Classes/AIQP.h; sourceTree = "<group>"; };
-		051C3A99247BE0D900E48244 /* QGInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGInbox.h; path = Classes/QGInbox.h; sourceTree = "<group>"; };
-		051C3A9B247BE0D900E48244 /* libQGSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQGSdk.a; path = Classes/libQGSdk.a; sourceTree = "<group>"; };
-		051C3A9C247BE0D900E48244 /* QGWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGWKWebView.h; path = Classes/QGWKWebView.h; sourceTree = "<group>"; };
-		051C3A9D247BE0DA00E48244 /* AIQP+ReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AIQP+ReactNative.h"; path = "Classes/AIQP+ReactNative.h"; sourceTree = "<group>"; };
-		051C3A9E247BE0DA00E48244 /* QGSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGSdk.h; path = Classes/QGSdk.h; sourceTree = "<group>"; };
+		047B45BDFB99521886B2D78C0616DDD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		140289EE6EF03A9D9159667213830E25 /* Pods-Appier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Appier_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1E4C52B453AE8E420FF5BD39DAE18526 /* Appier-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Appier-Info.plist"; sourceTree = "<group>"; };
 		25EC70CD5E9934D6C5C029115BDDD24F /* Pods_Appier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E18CCFF84FB905561FD9FAD98419F0 /* Pods-Appier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Appier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C3E096DE17E06E11C337FE379541856 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2D92FCE88A0D8A1CE1765D356C39B28B /* Appier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appier.debug.xcconfig; sourceTree = "<group>"; };
 		2F69A75F403EC99983C5C494B1B8AD19 /* Pods-Appier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Appier_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3657A522FE4D8C64598B3B28557C2CE1 /* Pods-Appier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Appier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C2F2EDF3F0CCF45F77DAE7DD9EBF338 /* Appier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Appier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D1B1509635714F20F16C879B4A03BE1 /* Appier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appier.release.xcconfig; sourceTree = "<group>"; };
-		57EAD7C0FA6D0B7F6CB02AEB69E15923 /* Appier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Appier.modulemap; sourceTree = "<group>"; };
-		57FD25AC68BFE78E9BB95C0AEDC4D75A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		542D86605A181ED2D9A56BD90C9C4C6A /* Appier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Appier-dummy.m"; sourceTree = "<group>"; };
 		5D318B4B3F5830D64E474ACB7D544DBB /* Pods-Appier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Appier_Tests.modulemap"; sourceTree = "<group>"; };
-		650F1B8FE724592DA4BFBB26A357F2E0 /* Appier.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Appier.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6A83AC93AEE9ED2410104BFCEEC68D9B /* Appier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Appier-dummy.m"; sourceTree = "<group>"; };
-		6E29305291BBBEB0AAB7E93A01C54D5B /* Appier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appier-prefix.pch"; sourceTree = "<group>"; };
+		6030F324E8D373E663800861184B2526 /* Appier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Appier.modulemap; sourceTree = "<group>"; };
 		6E89FE935B5AE5F087C18C3A7129D4C0 /* Pods-Appier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Appier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B5F7475C6E65FAD6A54EB4A696BFF6C /* Appier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appier-umbrella.h"; sourceTree = "<group>"; };
-		9434037A5FA5AB80B95250C0709DFCB5 /* Appier-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Appier-Info.plist"; sourceTree = "<group>"; };
+		82DAB3F3A876B92BFE9CB8092D46D9D9 /* Appier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appier-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0509F653B32B4756144214A08CDBB26 /* Appier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appier-prefix.pch"; sourceTree = "<group>"; };
+		A95F7B4D0166AD58AAF3A961436C3246 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AA8152CEA8A6B69522437C48FDA98F93 /* Appier.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Appier.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C34250B0247C0B59003DEDA6 /* AIQP+ReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AIQP+ReactNative.h"; path = "Appier/Classes/AIQP+ReactNative.h"; sourceTree = "<group>"; };
+		C34250B1247C0B59003DEDA6 /* QGSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGSdk.h; path = Appier/Classes/QGSdk.h; sourceTree = "<group>"; };
+		C34250B2247C0B59003DEDA6 /* libQGSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQGSdk.a; path = Appier/Classes/libQGSdk.a; sourceTree = "<group>"; };
+		C34250B3247C0B59003DEDA6 /* QGWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGWKWebView.h; path = Appier/Classes/QGWKWebView.h; sourceTree = "<group>"; };
+		C34250B4247C0B59003DEDA6 /* QGInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGInbox.h; path = Appier/Classes/QGInbox.h; sourceTree = "<group>"; };
+		C34250B5247C0B59003DEDA6 /* AIQP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIQP.h; path = Appier/Classes/AIQP.h; sourceTree = "<group>"; };
 		D5B895F7A74BEB107C8953944B107E33 /* Pods-Appier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Appier_Tests-dummy.m"; sourceTree = "<group>"; };
 		DB654941D1CF3E197EA96C9896E274D6 /* Pods-Appier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Appier_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EC3A4D590DC9DEFC43E639A402B2CE5F /* Appier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appier.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,31 +89,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2DFD2888295D52C56B817B9B87E3AC47 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				650F1B8FE724592DA4BFBB26A357F2E0 /* Appier.podspec */,
-				2C3E096DE17E06E11C337FE379541856 /* LICENSE */,
-				57FD25AC68BFE78E9BB95C0AEDC4D75A /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4AC54957BE0AB7E26AF9AFB54A6BD3B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				57EAD7C0FA6D0B7F6CB02AEB69E15923 /* Appier.modulemap */,
-				6A83AC93AEE9ED2410104BFCEEC68D9B /* Appier-dummy.m */,
-				9434037A5FA5AB80B95250C0709DFCB5 /* Appier-Info.plist */,
-				6E29305291BBBEB0AAB7E93A01C54D5B /* Appier-prefix.pch */,
-				8B5F7475C6E65FAD6A54EB4A696BFF6C /* Appier-umbrella.h */,
-				2D92FCE88A0D8A1CE1765D356C39B28B /* Appier.debug.xcconfig */,
-				4D1B1509635714F20F16C879B4A03BE1 /* Appier.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Appier";
-			sourceTree = "<group>";
-		};
 		604FDCF1BBEDAD5BAEF651D5D86B7A92 /* Pods-Appier_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,22 +109,36 @@
 		691F0B49E99A5BFF6C00F373AC4B2713 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6B2B6A7B5CD2E15AED74ECF118067BA3 /* Appier */,
+				98C21278B381023C45394B5C0B299B2E /* Appier */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6B2B6A7B5CD2E15AED74ECF118067BA3 /* Appier */ = {
+		6B174B68589BCFAB42FEF536F03CA87A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				051C3A98247BE0D900E48244 /* AIQP.h */,
-				051C3A9D247BE0DA00E48244 /* AIQP+ReactNative.h */,
-				051C3A9B247BE0D900E48244 /* libQGSdk.a */,
-				051C3A99247BE0D900E48244 /* QGInbox.h */,
-				051C3A9E247BE0DA00E48244 /* QGSdk.h */,
-				051C3A9C247BE0D900E48244 /* QGWKWebView.h */,
-				2DFD2888295D52C56B817B9B87E3AC47 /* Pod */,
-				4AC54957BE0AB7E26AF9AFB54A6BD3B4 /* Support Files */,
+				6030F324E8D373E663800861184B2526 /* Appier.modulemap */,
+				EC3A4D590DC9DEFC43E639A402B2CE5F /* Appier.xcconfig */,
+				542D86605A181ED2D9A56BD90C9C4C6A /* Appier-dummy.m */,
+				1E4C52B453AE8E420FF5BD39DAE18526 /* Appier-Info.plist */,
+				A0509F653B32B4756144214A08CDBB26 /* Appier-prefix.pch */,
+				82DAB3F3A876B92BFE9CB8092D46D9D9 /* Appier-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Appier";
+			sourceTree = "<group>";
+		};
+		98C21278B381023C45394B5C0B299B2E /* Appier */ = {
+			isa = PBXGroup;
+			children = (
+				C34250B5247C0B59003DEDA6 /* AIQP.h */,
+				C34250B0247C0B59003DEDA6 /* AIQP+ReactNative.h */,
+				C34250B2247C0B59003DEDA6 /* libQGSdk.a */,
+				C34250B4247C0B59003DEDA6 /* QGInbox.h */,
+				C34250B1247C0B59003DEDA6 /* QGSdk.h */,
+				C34250B3247C0B59003DEDA6 /* QGWKWebView.h */,
+				FE3C42FD51001DA2D41418C71AB2B858 /* Pod */,
+				6B174B68589BCFAB42FEF536F03CA87A /* Support Files */,
 			);
 			name = Appier;
 			path = ../..;
@@ -192,6 +180,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE3C42FD51001DA2D41418C71AB2B858 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AA8152CEA8A6B69522437C48FDA98F93 /* Appier.podspec */,
+				A95F7B4D0166AD58AAF3A961436C3246 /* LICENSE */,
+				047B45BDFB99521886B2D78C0616DDD9 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -199,12 +197,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051C3AA4247BE0DA00E48244 /* AIQP+ReactNative.h in Headers */,
+				C34250B7247C0B59003DEDA6 /* QGSdk.h in Headers */,
+				C34250BB247C0B59003DEDA6 /* AIQP.h in Headers */,
+				C34250B6247C0B59003DEDA6 /* AIQP+ReactNative.h in Headers */,
+				C34250B9247C0B59003DEDA6 /* QGWKWebView.h in Headers */,
+				C34250BA247C0B59003DEDA6 /* QGInbox.h in Headers */,
 				D88233462FAB4DC59A7730C7ECF5B2E0 /* Appier-umbrella.h in Headers */,
-				051C3A9F247BE0DA00E48244 /* AIQP.h in Headers */,
-				051C3AA5247BE0DA00E48244 /* QGSdk.h in Headers */,
-				051C3AA3247BE0DA00E48244 /* QGWKWebView.h in Headers */,
-				051C3AA0247BE0DA00E48244 /* QGInbox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,9 +328,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6581C11F15326A1EBA3815282C557B73 /* Debug */ = {
+		22E1BD1509B50264E9EF147418C814BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D92FCE88A0D8A1CE1765D356C39B28B /* Appier.debug.xcconfig */;
+			baseConfigurationReference = EC3A4D590DC9DEFC43E639A402B2CE5F /* Appier.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Appier/Appier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Appier/Appier-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Appier/Appier.modulemap";
+				PRODUCT_MODULE_NAME = Appier;
+				PRODUCT_NAME = Appier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		588F97F52940514D1328092D807AE111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3A4D590DC9DEFC43E639A402B2CE5F /* Appier.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -518,38 +548,6 @@
 			};
 			name = Debug;
 		};
-		D620BDD8CA0ADEBCE4F994C8C710EC9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D1B1509635714F20F16C879B4A03BE1 /* Appier.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Appier/Appier-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Appier/Appier-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Appier/Appier.modulemap";
-				PRODUCT_MODULE_NAME = Appier;
-				PRODUCT_NAME = Appier;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		D7E6D1D5CE17D09EE54B9F500480943B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3657A522FE4D8C64598B3B28557C2CE1 /* Pods-Appier_Tests.debug.xcconfig */;
@@ -589,8 +587,8 @@
 		25CE6F384A6798F9992DA658C1700CDD /* Build configuration list for PBXNativeTarget "Appier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6581C11F15326A1EBA3815282C557B73 /* Debug */,
-				D620BDD8CA0ADEBCE4F994C8C710EC9E /* Release */,
+				588F97F52940514D1328092D807AE111 /* Debug */,
+				22E1BD1509B50264E9EF147418C814BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

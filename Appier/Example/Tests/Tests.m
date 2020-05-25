@@ -2,8 +2,8 @@
 //  AppierTests.m
 //  AppierTests
 //
-//  Created by chunta on 05/25/2020.
-//  Copyright (c) 2020 chunta. All rights reserved.
+//  Created by shiv-appier on 05/25/2020.
+//  Copyright (c) 2020 shiv-appier. All rights reserved.
 //
 
 @import XCTest;

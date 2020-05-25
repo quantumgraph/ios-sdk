@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of Appier.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/chunta/Appier",
+  "homepage": "https://github.com/shiv-appier/Appier",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "chunta": "rex.chen@appier.com"
+    "shiv-appier": "shiv.raj@appier.com"
   },
   "source": {
-    "git": "https://github.com/chunta/Appier.git",
+    "git": "https://github.com/shiv-appier/Appier.git",
     "tag": "0.1.0"
   },
   "platforms": {
