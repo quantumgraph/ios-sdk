@@ -1,6 +1,6 @@
 # Appier
 
-[![CI Status](https://img.shields.io/travis/chunta/Appier.svg?style=flat)](https://travis-ci.org/chunta/Appier)
+[![CI Status](https://img.shields.io/travis/shiv-appier/Appier.svg?style=flat)](https://travis-ci.org/shiv-appier/Appier)
 [![Version](https://img.shields.io/cocoapods/v/Appier.svg?style=flat)](https://cocoapods.org/pods/Appier)
 [![License](https://img.shields.io/cocoapods/l/Appier.svg?style=flat)](https://cocoapods.org/pods/Appier)
 [![Platform](https://img.shields.io/cocoapods/p/Appier.svg?style=flat)](https://cocoapods.org/pods/Appier)
@@ -22,7 +22,7 @@ pod 'Appier'
 
 ## Author
 
-Appier
+shiv-appier, shiv.raj@appier.com
 
 ## License
 
