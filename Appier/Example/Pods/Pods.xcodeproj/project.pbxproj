@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051C3A92247BD93C00E48244 /* QGSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A8C247BD93C00E48244 /* QGSdk.h */; };
-		051C3A93247BD93C00E48244 /* AIQP+ReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A8D247BD93C00E48244 /* AIQP+ReactNative.h */; };
-		051C3A94247BD93C00E48244 /* QGInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A8E247BD93C00E48244 /* QGInbox.h */; };
-		051C3A95247BD93C00E48244 /* AIQP.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A8F247BD93C00E48244 /* AIQP.h */; };
-		051C3A97247BD93C00E48244 /* QGWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A91247BD93C00E48244 /* QGWKWebView.h */; };
+		051C3A9F247BE0DA00E48244 /* AIQP.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A98247BE0D900E48244 /* AIQP.h */; };
+		051C3AA0247BE0DA00E48244 /* QGInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A99247BE0D900E48244 /* QGInbox.h */; };
+		051C3AA3247BE0DA00E48244 /* QGWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A9C247BE0D900E48244 /* QGWKWebView.h */; };
+		051C3AA4247BE0DA00E48244 /* AIQP+ReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A9D247BE0DA00E48244 /* AIQP+ReactNative.h */; };
+		051C3AA5247BE0DA00E48244 /* QGSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 051C3A9E247BE0DA00E48244 /* QGSdk.h */; };
 		07B77D8B7651E42F44E48B0F6218ADBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		24C3B6E3FC91684E501B323D72095470 /* Appier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A83AC93AEE9ED2410104BFCEEC68D9B /* Appier-dummy.m */; };
 		860944E6AC5F8BCDBC664206EC3CBE5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -32,12 +32,12 @@
 
 /* Begin PBXFileReference section */
 		0302244C77E2B0A4AEB306824A4FB6D7 /* Pods-Appier_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Appier_Tests-Info.plist"; sourceTree = "<group>"; };
-		051C3A8C247BD93C00E48244 /* QGSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGSdk.h; path = Classes/QGSdk.h; sourceTree = "<group>"; };
-		051C3A8D247BD93C00E48244 /* AIQP+ReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AIQP+ReactNative.h"; path = "Classes/AIQP+ReactNative.h"; sourceTree = "<group>"; };
-		051C3A8E247BD93C00E48244 /* QGInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGInbox.h; path = Classes/QGInbox.h; sourceTree = "<group>"; };
-		051C3A8F247BD93C00E48244 /* AIQP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIQP.h; path = Classes/AIQP.h; sourceTree = "<group>"; };
-		051C3A90247BD93C00E48244 /* libQGSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQGSdk.a; path = Classes/libQGSdk.a; sourceTree = "<group>"; };
-		051C3A91247BD93C00E48244 /* QGWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGWKWebView.h; path = Classes/QGWKWebView.h; sourceTree = "<group>"; };
+		051C3A98247BE0D900E48244 /* AIQP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIQP.h; path = Classes/AIQP.h; sourceTree = "<group>"; };
+		051C3A99247BE0D900E48244 /* QGInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGInbox.h; path = Classes/QGInbox.h; sourceTree = "<group>"; };
+		051C3A9B247BE0D900E48244 /* libQGSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQGSdk.a; path = Classes/libQGSdk.a; sourceTree = "<group>"; };
+		051C3A9C247BE0D900E48244 /* QGWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGWKWebView.h; path = Classes/QGWKWebView.h; sourceTree = "<group>"; };
+		051C3A9D247BE0DA00E48244 /* AIQP+ReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AIQP+ReactNative.h"; path = "Classes/AIQP+ReactNative.h"; sourceTree = "<group>"; };
+		051C3A9E247BE0DA00E48244 /* QGSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGSdk.h; path = Classes/QGSdk.h; sourceTree = "<group>"; };
 		140289EE6EF03A9D9159667213830E25 /* Pods-Appier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Appier_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		25EC70CD5E9934D6C5C029115BDDD24F /* Pods_Appier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E18CCFF84FB905561FD9FAD98419F0 /* Pods-Appier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Appier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -143,12 +143,12 @@
 		6B2B6A7B5CD2E15AED74ECF118067BA3 /* Appier */ = {
 			isa = PBXGroup;
 			children = (
-				051C3A8F247BD93C00E48244 /* AIQP.h */,
-				051C3A8D247BD93C00E48244 /* AIQP+ReactNative.h */,
-				051C3A90247BD93C00E48244 /* libQGSdk.a */,
-				051C3A8E247BD93C00E48244 /* QGInbox.h */,
-				051C3A8C247BD93C00E48244 /* QGSdk.h */,
-				051C3A91247BD93C00E48244 /* QGWKWebView.h */,
+				051C3A98247BE0D900E48244 /* AIQP.h */,
+				051C3A9D247BE0DA00E48244 /* AIQP+ReactNative.h */,
+				051C3A9B247BE0D900E48244 /* libQGSdk.a */,
+				051C3A99247BE0D900E48244 /* QGInbox.h */,
+				051C3A9E247BE0DA00E48244 /* QGSdk.h */,
+				051C3A9C247BE0D900E48244 /* QGWKWebView.h */,
 				2DFD2888295D52C56B817B9B87E3AC47 /* Pod */,
 				4AC54957BE0AB7E26AF9AFB54A6BD3B4 /* Support Files */,
 			);
@@ -199,12 +199,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051C3A97247BD93C00E48244 /* QGWKWebView.h in Headers */,
-				051C3A95247BD93C00E48244 /* AIQP.h in Headers */,
+				051C3AA4247BE0DA00E48244 /* AIQP+ReactNative.h in Headers */,
 				D88233462FAB4DC59A7730C7ECF5B2E0 /* Appier-umbrella.h in Headers */,
-				051C3A92247BD93C00E48244 /* QGSdk.h in Headers */,
-				051C3A93247BD93C00E48244 /* AIQP+ReactNative.h in Headers */,
-				051C3A94247BD93C00E48244 /* QGInbox.h in Headers */,
+				051C3A9F247BE0DA00E48244 /* AIQP.h in Headers */,
+				051C3AA5247BE0DA00E48244 /* QGSdk.h in Headers */,
+				051C3AA3247BE0DA00E48244 /* QGWKWebView.h in Headers */,
+				051C3AA0247BE0DA00E48244 /* QGInbox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
