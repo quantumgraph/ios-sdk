@@ -1,0 +1,6 @@
+framework module Appier {
+  umbrella header "Appier-umbrella.h"
+
+  export *
+  module * { export * }
+}

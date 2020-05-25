@@ -1,0 +1,6 @@
+framework module Pods_Appier_Tests {
+  umbrella header "Pods-Appier_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
