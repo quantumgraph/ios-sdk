@@ -1,0 +1,16 @@
+PODS:
+  - Appier (0.1.0)
+
+DEPENDENCIES:
+  - Appier (from `../`)
+
+EXTERNAL SOURCES:
+  Appier:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Appier: 7a3c0388349c2ee8201f5150ba0e1d12c98e652a
+
+PODFILE CHECKSUM: 79770c2bf9868c4a8db8ef7f0190ef3c64f26840
+
+COCOAPODS: 1.9.1

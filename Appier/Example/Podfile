@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Appier_Tests' do
+  pod 'Appier', :path => '../'
+  
+  
+end
