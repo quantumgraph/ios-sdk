@@ -1,8 +1,8 @@
 //
-//  quantumgraphTests.m
-//  quantumgraphTests
+//  AppierTests.m
+//  AppierTests
 //
-//  Created by chunta on 05/18/2020.
+//  Created by chunta on 05/25/2020.
 //  Copyright (c) 2020 chunta. All rights reserved.
 //
 

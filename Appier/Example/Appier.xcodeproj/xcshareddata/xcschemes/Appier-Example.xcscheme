@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "quantumgraph_Example.app"
-               BlueprintName = "quantumgraph_Example"
-               ReferencedContainer = "container:quantumgraph.xcodeproj">
+               BuildableName = "Appier_Example.app"
+               BlueprintName = "Appier_Example"
+               ReferencedContainer = "container:Appier.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "quantumgraph_Tests.xctest"
-               BlueprintName = "quantumgraph_Tests"
-               ReferencedContainer = "container:quantumgraph.xcodeproj">
+               BuildableName = "Appier_Tests.xctest"
+               BlueprintName = "Appier_Tests"
+               ReferencedContainer = "container:Appier.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "quantumgraph_Example.app"
-            BlueprintName = "quantumgraph_Example"
-            ReferencedContainer = "container:quantumgraph.xcodeproj">
+            BuildableName = "Appier_Example.app"
+            BlueprintName = "Appier_Example"
+            ReferencedContainer = "container:Appier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "quantumgraph_Example.app"
-            BlueprintName = "quantumgraph_Example"
-            ReferencedContainer = "container:quantumgraph.xcodeproj">
+            BuildableName = "Appier_Example.app"
+            BlueprintName = "Appier_Example"
+            ReferencedContainer = "container:Appier.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "quantumgraph_Example.app"
-            BlueprintName = "quantumgraph_Example"
-            ReferencedContainer = "container:quantumgraph.xcodeproj">
+            BuildableName = "Appier_Example.app"
+            BlueprintName = "Appier_Example"
+            ReferencedContainer = "container:Appier.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

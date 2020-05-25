@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6E3F96DFB2BC83861CC136 /* Pods_Appier_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18E2DD1D066154B48635B99 /* Pods_Appier_Tests.framework */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		BBB14F1848C0F4D868F30EC3 /* Pods_quantumgraph_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40B4E2ECC3F8F77EC5326AC /* Pods_quantumgraph_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F84656936B67C4FD7E5949F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		42A0C79D1829591E01560E20 /* Pods-quantumgraph_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quantumgraph_Tests.release.xcconfig"; path = "Target Support Files/Pods-quantumgraph_Tests/Pods-quantumgraph_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		56F11A58EECAD659AB075A04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		226387E94DC57C2AAFD2F421 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		533D05BEB3F610D4C9ECF022 /* Pods-Appier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appier_Tests.release.xcconfig"; path = "Target Support Files/Pods-Appier_Tests/Pods-Appier_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F5AE195388D20070C39A /* quantumgraph_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quantumgraph_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* Appier_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Appier_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		CBBD227A9887E34AFD8FE303 /* Pods-quantumgraph_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quantumgraph_Tests.debug.xcconfig"; path = "Target Support Files/Pods-quantumgraph_Tests/Pods-quantumgraph_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D40B4E2ECC3F8F77EC5326AC /* Pods_quantumgraph_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quantumgraph_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA9191C5D86068C604B7924B /* quantumgraph.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = quantumgraph.podspec; path = ../quantumgraph.podspec; sourceTree = "<group>"; };
+		A76F5BBB3AFD8B94A05CA03B /* Appier.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Appier.podspec; path = ../Appier.podspec; sourceTree = "<group>"; };
+		ACAEAA44D3590B42E934A7C4 /* Pods-Appier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appier_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Appier_Tests/Pods-Appier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF65410A63FA08E1223B54B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F18E2DD1D066154B48635B99 /* Pods_Appier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +41,18 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				BBB14F1848C0F4D868F30EC3 /* Pods_quantumgraph_Tests.framework in Frameworks */,
+				0B6E3F96DFB2BC83861CC136 /* Pods_Appier_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DF3B8975E90E535E79231FE /* Pods */ = {
+		486463C9CDAE3B62F4C4EC23 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CBBD227A9887E34AFD8FE303 /* Pods-quantumgraph_Tests.debug.xcconfig */,
-				42A0C79D1829591E01560E20 /* Pods-quantumgraph_Tests.release.xcconfig */,
+				ACAEAA44D3590B42E934A7C4 /* Pods-Appier_Tests.debug.xcconfig */,
+				533D05BEB3F610D4C9ECF022 /* Pods-Appier_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -65,14 +65,14 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				0DF3B8975E90E535E79231FE /* Pods */,
+				486463C9CDAE3B62F4C4EC23 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5AE195388D20070C39A /* quantumgraph_Tests.xctest */,
+				6003F5AE195388D20070C39A /* Appier_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				D40B4E2ECC3F8F77EC5326AC /* Pods_quantumgraph_Tests.framework */,
+				F18E2DD1D066154B48635B99 /* Pods_Appier_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,9 +111,9 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				DA9191C5D86068C604B7924B /* quantumgraph.podspec */,
-				0F84656936B67C4FD7E5949F /* README.md */,
-				56F11A58EECAD659AB075A04 /* LICENSE */,
+				A76F5BBB3AFD8B94A05CA03B /* Appier.podspec */,
+				BF65410A63FA08E1223B54B8 /* README.md */,
+				226387E94DC57C2AAFD2F421 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -121,23 +121,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F5AD195388D20070C39A /* quantumgraph_Tests */ = {
+		6003F5AD195388D20070C39A /* Appier_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "quantumgraph_Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Appier_Tests" */;
 			buildPhases = (
-				38382DFE0692EA78C1997799 /* [CP] Check Pods Manifest.lock */,
+				A156948800C8FAAB21273C95 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				FF94E1CF9F43385BA09E675C /* [CP] Embed Pods Frameworks */,
+				387938A12384DFA58A1C96D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = quantumgraph_Tests;
-			productName = quantumgraphTests;
-			productReference = 6003F5AE195388D20070C39A /* quantumgraph_Tests.xctest */;
+			name = Appier_Tests;
+			productName = AppierTests;
+			productReference = 6003F5AE195388D20070C39A /* Appier_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "quantumgraph" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Appier" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F5AD195388D20070C39A /* quantumgraph_Tests */,
+				6003F5AD195388D20070C39A /* Appier_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +185,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38382DFE0692EA78C1997799 /* [CP] Check Pods Manifest.lock */ = {
+		387938A12384DFA58A1C96D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appier_Tests/Pods-Appier_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Appier/Appier.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Appier.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Appier_Tests/Pods-Appier_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A156948800C8FAAB21273C95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,29 +218,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-quantumgraph_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Appier_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF94E1CF9F43385BA09E675C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-quantumgraph_Tests/Pods-quantumgraph_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/quantumgraph/quantumgraph.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/quantumgraph.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quantumgraph_Tests/Pods-quantumgraph_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -325,7 +325,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBBD227A9887E34AFD8FE303 /* Pods-quantumgraph_Tests.debug.xcconfig */;
+			baseConfigurationReference = ACAEAA44D3590B42E934A7C4 /* Pods-Appier_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -342,14 +342,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quantumgraph_Example.app/quantumgraph_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appier_Example.app/Appier_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A0C79D1829591E01560E20 /* Pods-quantumgraph_Tests.release.xcconfig */;
+			baseConfigurationReference = 533D05BEB3F610D4C9ECF022 /* Pods-Appier_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -362,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quantumgraph_Example.app/quantumgraph_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appier_Example.app/Appier_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -370,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "quantumgraph" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "Appier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -379,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "quantumgraph_Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Appier_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,

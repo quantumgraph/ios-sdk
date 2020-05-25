@@ -3,7 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'version.json')))
 
 Pod::Spec.new do |s|
-  s.name         = "quantumgraph"
+  s.name         = "Appier"
   s.version      = package['version']
   s.summary      = "iOS Sdk helps you to track user events in your app and display notifications"
 
