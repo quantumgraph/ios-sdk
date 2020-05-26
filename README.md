@@ -29,6 +29,8 @@ Appier Inc., shiv.raj@appier.com
 
 Appier is available under the MIT license. See the LICENSE file for more info.
 
-##Documentation
+## Documentation
+
 Refer to [Appier's Documentations](https://docs.aiqua.appier.com)
+
 Website: https://www.appier.com
