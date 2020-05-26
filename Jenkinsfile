@@ -10,7 +10,13 @@ pipeline {
       steps {
         step([$class: 'WsCleanup'])
         checkout scm
-        sh "publish.sh"
+        script {
+          AGENT_WORKSPACE = WORKSPACE
+        }
+        // Make sure script runs in the directory of "checkout scm"
+        dir(AGENT_WORKSPACE) {
+          sh "publish.sh"
+        }
       }
     }
   }
