@@ -1,9 +1,9 @@
-# quantumgraph
+# Appier
 
-[![CI Status](https://img.shields.io/travis/chunta/quantumgraph.svg?style=flat)](https://travis-ci.org/chunta/quantumgraph)
-[![Version](https://img.shields.io/cocoapods/v/quantumgraph.svg?style=flat)](https://cocoapods.org/pods/quantumgraph)
-[![License](https://img.shields.io/cocoapods/l/quantumgraph.svg?style=flat)](https://cocoapods.org/pods/quantumgraph)
-[![Platform](https://img.shields.io/cocoapods/p/quantumgraph.svg?style=flat)](https://cocoapods.org/pods/quantumgraph)
+[![CI Status](https://img.shields.io/travis/appier/Appier.svg?style=flat)](https://travis-ci.org/appier/Appier)
+[![Version](https://img.shields.io/cocoapods/v/Appier.svg?style=flat)](https://cocoapods.org/pods/Appier)
+[![License](https://img.shields.io/cocoapods/l/Appier.svg?style=flat)](https://cocoapods.org/pods/Appier)
+[![Platform](https://img.shields.io/cocoapods/p/Appier.svg?style=flat)](https://cocoapods.org/pods/Appier)
 
 ## Example
 
@@ -13,17 +13,22 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-quantumgraph is available through [CocoaPods](https://cocoapods.org). To install
+Appier is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+
 ```ruby
-pod 'quantumgraph'
+pod 'Appier'
 ```
 
 ## Author
 
-chunta, rex.chen@appier.com
+Appier Inc., shiv.raj@appier.com
 
 ## License
 
-quantumgraph is available under the MIT license. See the LICENSE file for more info.
+Appier is available under the MIT license. See the LICENSE file for more info.
+
+##Documentation
+Refer to [Appier's Documentations](https://docs.aiqua.appier.com)
+Website: https://www.appier.com
