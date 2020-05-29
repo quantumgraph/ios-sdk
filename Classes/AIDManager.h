@@ -41,7 +41,7 @@ This method is strongly suggested to be called in viewDidAppear.
 
 @param vctl            Instance of current UIViewController visible to the user
 @param pageType        One page type that is used to tell server which page you are staying at
-@param scrollView      Instance of Scrollable View (subclass of UIScrollView) for tracking User behavior
+@param scrollable      Instance of Scrollable View (subclass of UIScrollView) for tracking User behavior
 @param isLogin         Boolean value that you can tell us if one user is logged-in
 @param itemPrice       Price of product/item User is viewing, only for product details/item page
 @param cartPrice       Total Price of the items in the Shopping Cart added by the User
