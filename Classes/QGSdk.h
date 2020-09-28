@@ -12,8 +12,6 @@
 #import <UserNotifications/UserNotifications.h>
 #import "QGInbox.h"
 
-#define DEPRECATED_MSG_ATTRIBUTE(msg) __attribute((deprecated((msg))))
-
 NS_ASSUME_NONNULL_BEGIN
 @interface QGSdk : NSObject
 
